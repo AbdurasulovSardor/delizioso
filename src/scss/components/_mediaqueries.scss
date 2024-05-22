@@ -1,0 +1,127 @@
+// MEDIA 1020px
+@media screen and (max-width: 1020px) {
+  .nav__list {
+    gap: 25px;
+  }
+}
+
+// MEDIA 956px
+@media screen and (max-width: 956px) {
+  .nav {
+    &__logo img {
+      width: 110px;
+    }
+
+    &__list {
+      gap: 15px;
+    }
+
+    &__buttons {
+      gap: 10px;
+    }
+
+    &__cart {
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    &__badge {
+      font-size: 7px;
+      width: 12px;
+      height: 12px;
+    }
+
+    &__login {
+      padding: 9px 30px;
+      font-size: 12px;
+    }
+  }
+}
+
+// MEDIA 775px
+@media screen and (max-width: 775px) {
+  .nav {
+    &__logo img {
+      width: 130px;
+    }
+
+    &__list {
+      position: absolute;
+      right: -100%;
+      top: 0;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 50%;
+      height: 100vh;
+      background: var(--white-color);
+      margin: 0 auto;
+      padding: 35px;
+      z-index: 99;
+    }
+
+    &__login {
+      position: absolute;
+      left: 200%;
+      top: 260px;
+      z-index: 99;
+    }
+
+    &__close {
+      display: block;
+      position: absolute;
+      right: -100%;
+      top: 33px;
+      z-index: 99;
+    }
+
+    &__menu {
+      display: block;
+    }
+
+    &__behind {
+      display: block;
+    }
+  }
+
+  .nav--active .nav__list {
+    right: 0;
+  }
+
+  .nav--active .nav__login {
+    left: 55%;
+  }
+
+  .nav--active .nav__close {
+    right: 30px;
+  }
+
+  .nav--active .nav__behind {
+    right: 0;
+  }
+}
+
+// MEDIA 576px
+@media screen and (max-width: 576px) {
+  .nav__list {
+    width: 60%;
+  }
+
+  .nav--active .nav__login {
+    left: 45%;
+  }
+}
+
+// MEDIA 375PX
+@media screen and (max-width: 375px) {
+  .nav__list {
+    width: 80%;
+  }
+
+  .nav--active .nav__login {
+    left: 29%;
+  }
+}

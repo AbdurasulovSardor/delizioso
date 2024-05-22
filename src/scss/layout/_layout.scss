@@ -3,3 +3,41 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.btn {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 14px 55px;
+  border: 2px solid transparent;
+  border-radius: 162px;
+  transition: all 0.3s ease;
+}
+
+.small-btn {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 35px;
+  border: 2px solid transparent;
+  border-radius: 133px;
+  transition: all 0.3s ease;
+}
+
+.section-title {
+  font-family: "Tinos";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  color: var(--title-color);
+}
+
+.section-description {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: var(--description-color);
+}

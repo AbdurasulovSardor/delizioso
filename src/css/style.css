@@ -8,6 +8,8 @@
   --description-color: #5C4529;
   --card-color: #FBFAF7;
   --bg-color: #FFFBF2;
+  --white-color: #fff;
+  --black-color: #000;
   --body-font: "Poppins", "Raleway", "Tinos", sans-serif;
   --biggest-size: 60px;
 }
@@ -40,4 +42,251 @@ button {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 14px 55px;
+  border: 2px solid transparent;
+  border-radius: 162px;
+  transition: all 0.3s ease;
+}
+
+.small-btn {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 35px;
+  border: 2px solid transparent;
+  border-radius: 133px;
+  transition: all 0.3s ease;
+}
+
+.section-title {
+  font-family: "Tinos";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  color: var(--title-color);
+}
+
+.section-description {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: var(--description-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  z-index: 55;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.nav__logo {
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+.nav__logo:hover {
+  opacity: 0.8;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: all 0.3s ease;
+}
+.nav__link {
+  display: block;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--title-color);
+  transition: 0.3s ease;
+}
+.nav__link:hover {
+  color: var(--first-color);
+}
+.nav__link--active {
+  color: var(--first-color);
+}
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.nav__cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--card-color);
+  border-radius: 50%;
+}
+.nav__badge {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-weight: 500;
+  font-size: 8px;
+  color: #fff;
+  background: red;
+  border-radius: 50%;
+}
+.nav__login {
+  background: var(--second-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+.nav__login:hover {
+  background: transparent;
+  color: var(--second-color);
+  border-color: var(--second-color);
+}
+.nav__menu {
+  display: none;
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.nav__close {
+  display: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.nav__close img {
+  width: 15px;
+  height: 15px;
+}
+.nav__behind {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1020px) {
+  .nav__list {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 956px) {
+  .nav__logo img {
+    width: 110px;
+  }
+  .nav__list {
+    gap: 15px;
+  }
+  .nav__buttons {
+    gap: 10px;
+  }
+  .nav__cart {
+    width: 40px;
+    height: 40px;
+  }
+  .nav__cart img {
+    width: 20px;
+  }
+  .nav__badge {
+    font-size: 7px;
+    width: 12px;
+    height: 12px;
+  }
+  .nav__login {
+    padding: 9px 30px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .nav__logo img {
+    width: 130px;
+  }
+  .nav__list {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background: var(--white-color);
+    margin: 0 auto;
+    padding: 35px;
+    z-index: 99;
+  }
+  .nav__login {
+    position: absolute;
+    left: 200%;
+    top: 260px;
+    z-index: 99;
+  }
+  .nav__close {
+    display: block;
+    position: absolute;
+    right: -100%;
+    top: 33px;
+    z-index: 99;
+  }
+  .nav__menu {
+    display: block;
+  }
+  .nav__behind {
+    display: block;
+  }
+  .nav--active .nav__list {
+    right: 0;
+  }
+  .nav--active .nav__login {
+    left: 55%;
+  }
+  .nav--active .nav__close {
+    right: 30px;
+  }
+  .nav--active .nav__behind {
+    right: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav__list {
+    width: 60%;
+  }
+  .nav--active .nav__login {
+    left: 45%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav__list {
+    width: 80%;
+  }
+  .nav--active .nav__login {
+    left: 29%;
+  }
 }/*# sourceMappingURL=style.css.map */
