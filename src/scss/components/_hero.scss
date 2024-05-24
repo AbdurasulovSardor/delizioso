@@ -1,0 +1,71 @@
+.hero {
+  overflow-x: hidden;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 20px;
+  }
+
+  &__data {
+    max-width: 523px;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--first-color);
+    padding: 10px 34px;
+    background: var(--first-color-light);
+    border-radius: 126px;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 80px;
+    font-family: "Raleway";
+    color: var(--title-color);
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 77px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__order {
+    background: var(--first-color);
+    color: var(--white-color);
+    padding: 14px 30px;
+
+    &:hover {
+      background: transparent;
+      color: var(--first-color);
+      border-color: var(--first-color);
+    }
+  }
+
+  &__reservation {
+    background: var(--second-color);
+    color: var(--white-color);
+    padding: 14px 30px;
+
+    &:hover {
+      background: transparent;
+      color: var(--second-color);
+      border-color: var(--second-color);
+    }
+  }
+
+  &__img {
+    margin-right: -100px;
+    object-fit: contain;
+  }
+}

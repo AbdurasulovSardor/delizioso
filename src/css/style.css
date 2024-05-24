@@ -48,7 +48,7 @@ button {
   display: inline-block;
   font-family: "Poppins";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   padding: 14px 55px;
   border: 2px solid transparent;
   border-radius: 162px;
@@ -80,6 +80,10 @@ button {
   font-size: 20px;
   line-height: 200%;
   color: var(--description-color);
+}
+
+.main {
+  padding-top: 100px;
 }
 
 .header {
@@ -193,14 +197,89 @@ button {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.hero {
+  overflow-x: hidden;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 20px;
+}
+.hero__data {
+  max-width: 523px;
+}
+.hero__subtitle {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--first-color);
+  padding: 10px 34px;
+  background: var(--first-color-light);
+  border-radius: 126px;
+  margin-bottom: 22px;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: "Raleway";
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+.hero__description {
+  margin-bottom: 77px;
+}
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.hero__order {
+  background: var(--first-color);
+  color: var(--white-color);
+  padding: 14px 30px;
+}
+.hero__order:hover {
+  background: transparent;
+  color: var(--first-color);
+  border-color: var(--first-color);
+}
+.hero__reservation {
+  background: var(--second-color);
+  color: var(--white-color);
+  padding: 14px 30px;
+}
+.hero__reservation:hover {
+  background: transparent;
+  color: var(--second-color);
+  border-color: var(--second-color);
+}
+.hero__img {
+  margin-right: -100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media screen and (max-width: 1020px) {
   .nav__list {
     gap: 25px;
   }
+  .hero__img {
+    width: 650px;
+  }
 }
 @media screen and (max-width: 956px) {
+  .section-description {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 13px 25px;
+    font-size: 15px;
+  }
+  .nav {
+    padding: 15px 0;
+  }
   .nav__logo img {
-    width: 110px;
+    width: 100px;
   }
   .nav__list {
     gap: 15px;
@@ -221,8 +300,26 @@ button {
     height: 12px;
   }
   .nav__login {
-    padding: 9px 30px;
+    padding: 9px 25px;
     font-size: 12px;
+  }
+  .hero__container {
+    padding: 70px 20px;
+  }
+  .hero__subtitle {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  .hero__title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .hero__description {
+    margin-bottom: 50px;
+  }
+  .hero__img {
+    width: 530px;
   }
 }
 @media screen and (max-width: 775px) {
@@ -273,6 +370,30 @@ button {
   .nav--active .nav__behind {
     right: 0;
   }
+  .hero__data {
+    max-width: 360px;
+  }
+  .hero__subtitle {
+    font-size: 12px;
+  }
+  .hero__title {
+    font-size: 45px;
+  }
+  .hero__description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .hero__buttons {
+    gap: 15px;
+  }
+  .hero__order, .hero__reservation {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  .hero__img {
+    width: 400px;
+    margin-right: -85px;
+  }
 }
 @media screen and (max-width: 576px) {
   .nav__list {
@@ -281,6 +402,20 @@ button {
   .nav--active .nav__login {
     left: 45%;
   }
+  .hero__container {
+    flex-direction: column;
+  }
+  .hero__data {
+    margin-bottom: 30px;
+  }
+  .hero__title {
+    font-size: 60px;
+  }
+  .hero__img {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 375px) {
   .nav__list {
@@ -288,5 +423,15 @@ button {
   }
   .nav--active .nav__login {
     left: 29%;
+  }
+  .hero__container {
+    padding: 60px 20px;
+  }
+  .hero__subtitle {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+  .hero__title {
+    font-size: 45px;
   }
 }/*# sourceMappingURL=style.css.map */

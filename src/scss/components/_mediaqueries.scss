@@ -3,13 +3,28 @@
   .nav__list {
     gap: 25px;
   }
+
+  .hero__img {
+    width: 650px;
+  }
 }
 
 // MEDIA 956px
 @media screen and (max-width: 956px) {
+  .section-description {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 13px 25px;
+    font-size: 15px;
+  }
+
   .nav {
+    padding: 15px 0;
+
     &__logo img {
-      width: 110px;
+      width: 100px;
     }
 
     &__list {
@@ -36,8 +51,33 @@
     }
 
     &__login {
-      padding: 9px 30px;
+      padding: 9px 25px;
       font-size: 12px;
+    }
+  }
+
+  .hero {
+    &__container {
+      padding: 70px 20px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      margin-bottom: 50px;
+    }
+
+    &__img {
+      width: 530px;
     }
   }
 }
@@ -102,6 +142,40 @@
   .nav--active .nav__behind {
     right: 0;
   }
+
+  .hero {
+    &__data {
+      max-width: 360px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
+
+    &__description {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    &__buttons {
+      gap: 15px;
+    }
+
+    &__order,
+    &__reservation {
+      font-size: 10px;
+      padding: 10px 20px;
+    }
+
+    &__img {
+      width: 400px;
+      margin-right: -85px;
+    }
+  }
 }
 
 // MEDIA 576px
@@ -113,6 +187,26 @@
   .nav--active .nav__login {
     left: 45%;
   }
+
+  .hero {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__data {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__img {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
 }
 
 // MEDIA 375PX
@@ -123,5 +217,20 @@
 
   .nav--active .nav__login {
     left: 29%;
+  }
+
+  .hero {
+    &__container {
+      padding: 60px 20px;
+    }
+
+    &__subtitle {
+      font-size: 10px;
+      padding: 8px 15px;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
   }
 }
