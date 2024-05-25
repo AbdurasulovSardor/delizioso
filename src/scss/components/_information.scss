@@ -1,0 +1,42 @@
+.information {
+  background: var(--second-color-light);
+  margin-bottom: 30px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 20px;
+  }
+
+  &__data {
+    max-width: 400px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    span {
+      color: var(--first-color);
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    background: var(--first-color);
+    color: var(--white-color);
+
+    &:hover {
+      background: transparent;
+      color: var(--first-color);
+      border-color: var(--first-color);
+    }
+  }
+
+  &__img {
+    max-width: 640px;
+  }
+}
